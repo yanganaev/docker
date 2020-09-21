@@ -59,7 +59,7 @@ docker load -i arch_name.tar
 
 
 Import/Export Docker Image to AWS ECR
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 docker build -t test:v1 .
 aws ecr get-login --no-include-email --region=ca-central-1 
 docker tag  denis:v1  12345678.dkr.ecr.ca-central-1.amazonaws.com/myrepo:latest
@@ -69,7 +69,6 @@ docker pull 12345678.dkr.ecr.ca-central-1.amazonaws.com/myrepo:latest
 
 
  Kill and Delete Containers and Images
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ```
 docker rm -f $(docker ps -aq)        # Delete all Containers
 docker rmi -f $(docker images -q)    # Delete all Images
