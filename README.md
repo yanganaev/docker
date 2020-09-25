@@ -14,11 +14,11 @@ sudo usermod -aG docker $USER
 >>>logout/login<<<
 ```
 
-docker run hello-world
+```docker run hello-world```
 
-docker ps
-docker ps -a
-docker images
+```docker ps```
+```docker ps -a```
+```docker images```
 
 
 docker search tomcat
